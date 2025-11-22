@@ -14,9 +14,20 @@
 //     document.getElementById(`p2`).textContent = age;
 //     document.getElementById(`p3`).textContent = GPA;
 
-let username;
+// let username;
+//     document.getElementById("myButton").onclick= function(){
+//         username = document.getElementById("myInput").value;
+//         document.getElementById("myLabel").textContent = `Hello ${username}`
+//     }
 
-    document.getElementById("myButton").onclick= function(){
-        username = document.getElementById("myInput").value;
-        document.getElementById("myLabel").textContent = `Hello ${username}`
-    }
+let a = 25;
+let b = "Thai";
+let c = "Thai";
+
+a = Number(a);
+b = String(b);
+c = Boolean(c);
+
+console.log(`${a}, ${typeof a}`);
+console.log(`${b}, ${typeof b}`);
+console.log(`${c}, ${typeof c}`);
