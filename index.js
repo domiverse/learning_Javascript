@@ -37,13 +37,15 @@
 // console.log(`${c}, ${typeof c}`);
 
 
-const pi = 3.14159
-let banKinh;
-let chuVi;
+// 5.Constant
+// const pi = 3.14159
+// let banKinh;
+// let chuVi;
 
-document.getElementById("myButton").onclick = function(){
-    banKinh = document.getElementById("myInput").value;
-    banKinh = Number(banKinh);
-    chuVi = 2 * pi * banKinh;
-    document.getElementById("myH3").textContent=`Chu vi hình tròn là: ${chuVi}`;
-}
+// document.getElementById("myButton").onclick = function(){
+//     banKinh = document.getElementById("myInput").value;
+//     banKinh = Number(banKinh);
+//     chuVi = 2 * pi * banKinh;
+//     document.getElementById("myH3").textContent=`Chu vi hình tròn là: ${chuVi}`;
+// }
+
