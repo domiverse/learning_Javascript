@@ -1,0 +1,24 @@
+#myH1{
+    text-align: center;
+}
+#myLabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#funcBtn{
+    text-align: center;
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(105, 226, 101);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25;
+}
+.buttons:hover{
+    background-color: rgb(33, 182, 27);
+}
