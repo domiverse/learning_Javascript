@@ -49,17 +49,34 @@
 //     document.getElementById("myH3").textContent=`Chu vi hình tròn là: ${chuVi}`;
 // }
 
-let count = 0;
+// let count = 0;
+
+// document.getElementById("decBtn").onclick = function(){
+//     count = count - 1;
+//     countLabel = document.getElementById("myLabel").textContent = count;
+// }
+// document.getElementById("resBtn").onclick = function(){
+//     count = 0;
+//     countLabel = document.getElementById("myLabel").textContent = count;
+// }
+// document.getElementById("incBtn").onclick = function(){
+//     count = count + 1;
+//     countLabel = document.getElementById("myLabel").textContent = count;
+// }
+
+let = count;
 
 document.getElementById("decBtn").onclick = function(){
-    count = count - 1;
-    countLabel = document.getElementById("myLabel").textContent = count;
-}
-document.getElementById("resBtn").onclick = function(){
-    count = 0;
-    countLabel = document.getElementById("myLabel").textContent = count;
-}
-document.getElementById("incBtn").onclick = function(){
     count = count + 1;
-    countLabel = document.getElementById("myLabel").textContent = count;
+    countLabel=document.getElementById("myLabel").textContent=count;
 }
+}
+
+
+
+
+
+
+
+
+
