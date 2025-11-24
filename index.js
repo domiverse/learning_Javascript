@@ -64,13 +64,21 @@
 //     countLabel = document.getElementById("myLabel").textContent = count;
 // }
 
-let = count;
+let = count = 0;
 
 document.getElementById("decBtn").onclick = function(){
-    count = count + 1;
-    countLabel=document.getElementById("myLabel").textContent=count;
+    count --;
+    myLabel = document.getElementById("myLabel").textContent = count;
 }
+document.getElementById("resBtn").onclick = function(){
+    count = 0;
+    document.getElementById("myLabel").textContent = count;
 }
+document.getElementById("incBtn").onclick = function(){
+    count ++;
+    document.getElementById("myLabel").textContent = count;
+}
+
 
 
 
