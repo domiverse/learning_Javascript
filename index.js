@@ -64,20 +64,20 @@
 //     countLabel = document.getElementById("myLabel").textContent = count;
 // }
 
-let = count = 0;
+// let = count = 0;
 
-document.getElementById("decBtn").onclick = function(){
-    count --;
-    myLabel = document.getElementById("myLabel").textContent = count;
-}
-document.getElementById("resBtn").onclick = function(){
-    count = 0;
-    document.getElementById("myLabel").textContent = count;
-}
-document.getElementById("incBtn").onclick = function(){
-    count ++;
-    document.getElementById("myLabel").textContent = count;
-}
+// document.getElementById("decBtn").onclick = function(){
+//     count --;
+//     document.getElementById("myLabel").textContent = count;
+// }
+// document.getElementById("resBtn").onclick = function(){
+//     count = 0;
+//     document.getElementById("myLabel").textContent = count;
+// }
+// document.getElementById("incBtn").onclick = function(){
+//     count ++;
+//     document.getElementById("myLabel").textContent = count;
+// }
 
 
 
