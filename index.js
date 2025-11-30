@@ -1,90 +1,51 @@
-// 1.
-// document.getElementById("myH1").textContent="xin chao";
-// document.getElementById("myP").textContent="hello world";
-// let age = 25;
-// let name = "Trung Thai";
-// let tuvung = "단가";
-// console.log(`nam nay ${age} tuoi`);
-// console.log(`tôi tên là ${name}`);
-// console.log(`từ vựng tiếng Hàn hôm nay là ${tuvung}`)
 
-// 2.
-// let fullName = "Ho Trung Thai";
-// let age = 25;
-// let GPA = 2.86;
-//     document.getElementById("p1").textContent= fullName;
-//     document.getElementById(`p2`).textContent = age;
-//     document.getElementById(`p3`).textContent = GPA;
+(function(){
+    const checkbox = document.getElementById('extendtheland');
+    const radios   = document.querySelectorAll('input[type="radio"][name="card"]');
+    const output   = document.getElementById('extendResult');
+    const btn      = document.getElementById('quyetchien');
 
-// 3.
-// let username;
-//     document.getElementById("myButton").onclick= function(){
-//         username = document.getElementById("myInput").value;
-//         document.getElementById("myLabel").textContent = `Hello ${username}`
-//     }
+    function getSelectedRadio() {
+        return document.querySelector('input[type="radio"][name="card"]:checked');
+    }
 
-// 4.
-// let a = 25;
-// let b = "Thai";
-// let c = "Thai";
+    function getLabelTextForInput(input) {
+        if (!input) return '';
+        const id = input.id;
+        const label = document.querySelector(`label[for="${id}"]`);
+        return label ? label.textContent.trim() : '';
+    }
 
-// a = Number(a);
-// b = String(b);
-// c = Boolean(c);
+    function renderLetters(text){
+        if(!output) return;
+        output.innerHTML = '';
+        for(const ch of text){
+            const span = document.createElement('span');
+            span.textContent = ch;
+            span.style.display = 'inline-block';
+            span.style.marginRight = '6px';
+            output.appendChild(span);
+        }
+    }
 
-// console.log(`${a}, ${typeof a}`);
-// console.log(`${b}, ${typeof b}`);
-// console.log(`${c}, ${typeof c}`);
+    // Khi bấm nút "quyetchien"
+    if (btn) {
+        btn.addEventListener('click', () => {
+            // Bắt buộc phải bật checkbox
+            if (!checkbox.checked) {
+                output.textContent = 'Hãy bật "Mở rộng bờ cõi" trước đã 😏';
+                return;
+            }
 
+            // Bắt buộc phải chọn 1 radio
+            const sel = getSelectedRadio();
+            if (!sel) {
+                output.textContent = 'Hãy chọn 1 thẻ hành động trước.';
+                return;
+            }
 
-// 5.Constant
-// const pi = 3.14159
-// let banKinh;
-// let chuVi;
-
-// document.getElementById("myButton").onclick = function(){
-//     banKinh = document.getElementById("myInput").value;
-//     banKinh = Number(banKinh);
-//     chuVi = 2 * pi * banKinh;
-//     document.getElementById("myH3").textContent=`Chu vi hình tròn là: ${chuVi}`;
-// }
-
-// let count = 0;
-
-// document.getElementById("decBtn").onclick = function(){
-//     count = count - 1;
-//     countLabel = document.getElementById("myLabel").textContent = count;
-// }
-// document.getElementById("resBtn").onclick = function(){
-//     count = 0;
-//     countLabel = document.getElementById("myLabel").textContent = count;
-// }
-// document.getElementById("incBtn").onclick = function(){
-//     count = count + 1;
-//     countLabel = document.getElementById("myLabel").textContent = count;
-// }
-
-// let = count = 0;
-
-// document.getElementById("decBtn").onclick = function(){
-//     count --;
-//     document.getElementById("myLabel").textContent = count;
-// }
-// document.getElementById("resBtn").onclick = function(){
-//     count = 0;
-//     document.getElementById("myLabel").textContent = count;
-// }
-// document.getElementById("incBtn").onclick = function(){
-//     count ++;
-//     document.getElementById("myLabel").textContent = count;
-// }
-
-
-
-
-
-
-
-
-
-
+            const text = getLabelTextForInput(sel) || 'Đã mở rộng';
+            renderLetters(text);
+        });
+    }
+})();
