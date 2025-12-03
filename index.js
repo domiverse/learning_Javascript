@@ -53,5 +53,4 @@
 const fullName = "Bro Code"
 
 let firstName = fullName.slice(4,8);
-wdsa
 console.log(firstName);
