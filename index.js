@@ -51,6 +51,6 @@
 // })();
 
 const fullName = "Bro Code"
-
+fd
 let firstName = fullName.slice(4,8);
 console.log(firstName);
