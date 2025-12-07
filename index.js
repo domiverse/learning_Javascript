@@ -67,3 +67,21 @@
 // // console.log(userName);
 // // console.log(extenSion);qd
 // console.log(tenDungKiTu);
+
+
+let loggIn = false;
+let userName;
+let passWord;
+
+while(!loggIn){
+    userName = window.prompt("Hay nhap ten dang nhap: ");
+    passWord = window.prompt("Hay nhap mat khau cua ban: ");
+
+    if(userName === "trungthai230700@gmail.com" && passWord === "matkhau"){
+        loggIn = true;
+        console.log("Đăng nhập thành công");
+    } 
+    else{
+        console.log("Ten dang nhap hoac mat khau khong dung")
+    }
+}
