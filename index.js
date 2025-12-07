@@ -50,20 +50,20 @@
 //     }
 // })();
 
-const fullName = "Trung Thai"
-const email = "trungthai2307@gmail.com"
+// const fullName = "Trung Thai"
+// const email = "trungthai2307@gmail.com"
 
-let tenNguoiDung = window.prompt("Hãy nhập tên của bạn: ")
-// let firstName = fullName.slice(4,8);
+// let tenNguoiDung = window.prompt("Hãy nhập tên của bạn: ")
+// // let firstName = fullName.slice(4,8);
 
-let firstName = fullName.slice(0, fullName.indexOf(" "));
-let lastName = fullName.slice(fullName.indexOf(" ") + 1);
-let userName = email.slice(0, email.indexOf("@"));
-let extenSion = email.slice(email.indexOf("@"));
-let tenDungKiTu = tenNguoiDung.trim().charAt(0).toUpperCase() + tenNguoiDung.trim().slice(1).toLowerCase();
+// let firstName = fullName.slice(0, fullName.indexOf(" "));
+// let lastName = fullName.slice(fullName.indexOf(" ") + 1);
+// let userName = email.slice(0, email.indexOf("@"));
+// let extenSion = email.slice(email.indexOf("@"));
+// let tenDungKiTu = tenNguoiDung.trim().charAt(0).toUpperCase() + tenNguoiDung.trim().slice(1).toLowerCase();
 
-// console.log(firstName);
-// console.log(lastName);
-// console.log(userName);
-// console.log(extenSion);
-console.log(tenDungKiTu);
+// // console.log(firstName);
+// // console.log(lastName);
+// // console.log(userName);
+// // console.log(extenSion);qd
+// console.log(tenDungKiTu);
